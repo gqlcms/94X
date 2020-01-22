@@ -1,0 +1,20 @@
+<use name="boost"/>
+<use name="FWCore/Framework"/>
+<use name="FWCore/PluginManager"/>
+<use name="FWCore/ParameterSet"/>
+<use name="DataFormats/Candidate"/>
+<use name="CommonTools/CandUtils"/>
+<use name="CommonTools/Utils"/>
+<use name="DataFormats/PatCandidates"/>
+<use name="CondFormats/JetMETObjects"/>
+<use name="JetMETCorrections/Objects"/>
+<use name="SimDataFormats/JetMatching"/>
+<use name="DataFormats/Common"/>
+<use name="DataFormats/Math"/>
+<use name="DataFormats/HepMCCandidate"/>
+<use name="PhysicsTools/PatUtils"/>
+<use name="PhysicsTools/PatExamples"/>
+<use name="AnalysisDataFormats/TopObjects"/>
+<use name="root"/>
+
+<flags EDM_PLUGIN="1"/>

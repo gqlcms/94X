@@ -1,0 +1,23 @@
+CRAB project directory:		/afs/cern.ch/work/x/xulyu/private/Summer2017/VVV/ntuple/Xudong/Summer17/VVV_newid/deepak8mc/CMSSW_8_0_26_patch2/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_QCD_HT700to1000
+Task name:			191020_232723:xulyu_crab_QCD_HT700to1000
+Grid scheduler - Task Worker:	crab3@vocms0144.cern.ch - crab-prod-tw01
+Status on the CRAB server:	SUBMITTED
+Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/191020_232723%3Axulyu_crab_QCD_HT700to1000
+Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=xulyu&refresh=0&table=Jobs&p=1&records=25&activemenu=2&status=&site=&tid=191020_232723%3Axulyu_crab_QCD_HT700to1000
+New dashboard monitoring URL:	https://monit-grafana.cern.ch/d/cmsTMDetail/cms-task-monitoring-task-view?orgId=11&var-user=xulyu&var-task=191020_232723%3Axulyu_crab_QCD_HT700to1000
+In case of issues with the new dashboard, please provide feedback to hn-cms-computing-tools@cern.ch
+Status on the scheduler:	SUBMITTED
+
+Jobs status:                    finished     		 40.5% (15/37)
+				running      		 48.6% (18/37)
+				transferring 		 10.8% ( 4/37)
+
+No publication information (publication has been disabled in the CRAB configuration file)
+
+Summary of run jobs:
+ * Memory: 1061MB min, 1154MB max, 1121MB ave
+ * Runtime: 5:34:14 min, 10:03:37 max, 7:28:25 ave
+ * CPU eff: 70% min, 97% max, 89% ave
+ * Waste: 0:02:15 (0% of total)
+
+Log file is /afs/cern.ch/work/x/xulyu/private/Summer2017/VVV/ntuple/Xudong/Summer17/VVV_newid/deepak8mc/CMSSW_8_0_26_patch2/src/ExoDiBosonResonances/EDBRTreeMaker/test/crab_QCD_HT700to1000/crab.log
