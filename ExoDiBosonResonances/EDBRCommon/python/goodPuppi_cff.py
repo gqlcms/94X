@@ -48,6 +48,5 @@ cleanPuppiAK4.checkOverlaps.taus = cms.PSet()
 cleanPuppiAK4.checkOverlaps.tkIsoElectrons = cms.PSet()
 cleanPuppiAK4.finalCut = ""#pt > 30"# & abs(eta) < 2.4"#pt > 20 & abs(eta) < 2.4"
 
-hh
 fatPuppiSequence = cms.Sequence( goodPuppi + cleanPuppi + goodPuppiAK4 + cleanPuppiAK4 )
 
