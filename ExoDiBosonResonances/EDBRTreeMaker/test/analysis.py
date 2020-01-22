@@ -406,7 +406,7 @@ updateJetCollection(
    )
 '''
 #jetsAK8puppi = "slimmedJetsAK8"
-jetsAK8puppi = "cleanPuppi"
+jetsAK8puppi = "selectedUpdatedPatJetsAK8WithDeepTags"
 #jetsAK8puppi = "goodPuppi"
 #jetsAK8puppi = "selectedUpdatedPatJetsAK8WithPuppiDaughters"
 #jetsAK8puppi = "selectedUpdatedPatJetsAK8WithDeepTags"
