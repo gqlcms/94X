@@ -48,5 +48,19 @@ cleanPuppiAK4.checkOverlaps.taus = cms.PSet()
 cleanPuppiAK4.checkOverlaps.tkIsoElectrons = cms.PSet()
 cleanPuppiAK4.finalCut = ""#pt > 30"# & abs(eta) < 2.4"#pt > 20 & abs(eta) < 2.4"
 
-fatPuppiSequence = cms.Sequence( goodPuppi + cleanPuppi + goodPuppiAK4 + cleanPuppiAK4 )
+from PhysicsTools.PatAlgos.tools.jetTools import updateJetCollection
+from RecoBTag.MXNet.pfDeepBoostedJet_cff import _pfDeepBoostedJetTagsAll, _pfDeepBoostedJetTagsProbs, _pfDeepBoostedJetTagsMetaDiscrs, _pfMassDecorrelatedDeepBoostedJetTagsProbs, _pfMassDecorrelatedDeepBoostedJetTagsMetaDiscrs
+updateJetCollection(
+    process,
+    jetSource = cms.InputTag('cleanPuppi'),
+    pvSource = cms.InputTag('offlineSlimmedPrimaryVertices'),
+    svSource = cms.InputTag('slimmedSecondaryVertices'),
+    rParam = 0.8,
+    jetCorrections = ('AK8PFPuppi', cms.vstring(['L2Relative', 'L3Absolute', 'L2L3Residual']), 'None'),
+    btagDiscriminators = _pfDeepBoostedJetTagsAll,
+    postfix='AK8WithDeepTags',
+    printWarning = False
+   )
+
+fatPuppiSequence = cms.Sequence( goodPuppi + cleanPuppi + goodPuppiAK4 + cleanPuppiAK4 + selectedUpdatedPatJetsAK8WithDeepTags)
 
